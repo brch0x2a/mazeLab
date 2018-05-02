@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.20.4 -->
+<interface>
+  <requires lib="gtk+" version="3.10"/>
+  <object class="GtkWindow" id="window_main">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">sudokuSolver</property>
+    <property name="default_width">340</property>
+    <property name="default_height">400</property>
+    <signal name="destroy" handler="on_window_main_destroy" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="fx_grid">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="bt_generar">
+            <property name="label" translatable="yes">Generar</property>
+            <property name="width_request">67</property>
+            <property name="height_request">32</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="generar" swapped="no"/>
+          </object>
+          <packing>
+            <property name="y">630</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_grabar">
+            <property name="label" translatable="yes">Grabar</property>
+            <property name="width_request">60</property>
+            <property name="height_request">32</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="grabar" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">346</property>
+            <property name="y">630</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_resolver">
+            <property name="label" translatable="yes">Resolver</property>
+            <property name="width_request">88</property>
+            <property name="height_request">32</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="resolver" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">463</property>
+            <property name="y">630</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_salir">
+            <property name="label" translatable="yes">Salir</property>
+            <property name="width_request">75</property>
+            <property name="height_request">32</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_window_main_destroy" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">525</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkDrawingArea" id="d_area">
+            <property name="width_request">600</property>
+            <property name="height_request">600</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="y">30</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFileChooserButton" id="bt_file_chooser">
+            <property name="width_request">155</property>
+            <property name="height_request">32</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="title" translatable="yes"/>
+            <signal name="file-set" handler="lectura" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">138</property>
+            <property name="y">630</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lb_resolver_prompt">
+            <property name="width_request">30</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">x</property>
+          </object>
+          <packing>
+            <property name="x">239</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Leer</property>
+          </object>
+          <packing>
+            <property name="x">196</property>
+            <property name="y">632</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lb_m">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">m</property>
+          </object>
+          <packing>
+            <property name="x">114</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lb_n">
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">n</property>
+          </object>
+          <packing>
+            <property name="x">290</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+  </object>
+</interface>
