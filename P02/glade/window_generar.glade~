@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.20.4 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="window_generar">
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">50</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Filas</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">100</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Columnas</property>
+          </object>
+          <packing>
+            <property name="x">212</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entry_fila">
+            <property name="width_request">136</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">4</property>
+            <property name="input_purpose">number</property>
+          </object>
+          <packing>
+            <property name="x">50</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width_request">124</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">4</property>
+            <property name="input_purpose">number</property>
+          </object>
+          <packing>
+            <property name="x">310</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_go">
+            <property name="label" translatable="yes">Go</property>
+            <property name="width_request">100</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="check" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">473</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lb_prompt">
+            <property name="width_request">194</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Ingrese dimenciones del Maze</property>
+          </object>
+          <packing>
+            <property name="x">181</property>
+            <property name="y">50</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+  </object>
+</interface>
